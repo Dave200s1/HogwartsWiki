@@ -1,1 +1,1 @@
-# HogwortsWiki
+# HogwartsWiki
