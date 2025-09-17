@@ -28,7 +28,7 @@ Eine interaktive Webanwendung, die es Nutzern ermöglicht, Charaktere aus der We
 
    * Die Funktion fetchData() wird aufgerufen.
 
-   * Diese Funktion sendet eine Anfrage an die externe HP-API.
+   * Diese Funktion sendet eine Anfrage an die externe HP-API. [API](https://github.com/KostaSav/hp-api)
 
    * Bei Erfolg werden die empfangenen Daten an die Funktion displayCharacters() übergeben.
 
