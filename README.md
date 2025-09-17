@@ -21,3 +21,37 @@ Eine interaktive Webanwendung, die es Nutzern ermöglicht, Charaktere aus der We
    * Fehlerbehandlung: Klare Fehlermeldungen bei ungültiger Eingabe oder API-Problemen.
 
   * Lade-Animation: Ein visuelles Feedback, während die Charakterdaten geladen werden.
+
+📖 Wie es funktioniert
+
+   * Der Nutzer wählt ein Haus aus (entweder über Buttons oder eine Eingabe).
+
+   * Die Funktion fetchData() wird aufgerufen.
+
+   * Diese Funktion sendet eine Anfrage an die externe HP-API.
+
+   * Bei Erfolg werden die empfangenen Daten an die Funktion displayCharacters() übergeben.
+
+   * Diese Funktion rendert für jeden Charakter eine Karte mit Bild und Namen in einem responsive Grid.
+
+🎯 Kernfunktionen im Code
+
+   * selectHouse(house): Setzt den Hausnamen und triggert das Fetching.
+
+   * fetchData(): Asynchrone Funktion, die die API anfragt und Error Handling beinhaltet.
+
+   * displayCharacters(characters): Rendert die empfangenen Charakter-Daten in das HTML.
+
+   * closeCharacter(): Schließt den Anzeige-Container.
+
+🔮 Mögliche Erweiterungen
+
+   * Detailansicht für Charaktere beim Anklicken einer Karte.
+
+   * Suchfunktion, um nach bestimmten Charakteren zu suchen.
+
+   * Filtern nach anderen Kriterien (Blutstatus, Zauberstab, etc.).
+
+   * Lokaler Favoriten-Speicher.
+
+   * Dunkelmodus-Toggle.
