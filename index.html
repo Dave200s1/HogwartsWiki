@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HogwortsWiki</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="./imgs/documentsIcon.png" class="logo">
+            <div class="user">
+                <img src="./imgs/Avatar.png" class="avatar">
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1>EXPLORE</h1>
+                <p>Explore the magical world of Harry Potter by searching for characters from the four Hogwarts houses: Gryffindor, Slytherin, Hufflepuff, and Ravenclaw.
+                </p>
+                <input type="text" id="hausName" placeholder="Enter house name">
+                <button id="searchbtn" onclick="fetchData()" type="button">Show</button>
+                
+                <div class="house-buttons">
+                    <button class="house-btn" onclick="selectHouse('gryffindor')">Gryffindor</button>
+                    <button class="house-btn" onclick="selectHouse('slytherin')">Slytherin</button>
+                    <button class="house-btn" onclick="selectHouse('hufflepuff')">Hufflepuff</button>
+                    <button class="house-btn" onclick="selectHouse('ravenclaw')">Ravenclaw</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="characters-container" id="charactersContainer">
+            <button class="close-btn" onclick=closeCharacter()>×</button>
+            <div id="charactersContent" class="charactersContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

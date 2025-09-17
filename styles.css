@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/castle.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar .logo {
+    width: 80px;
+    margin: 40px 0;
+    cursor: pointer;
+    
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user  img{
+    width: 85px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.house-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.house-btn {
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+#searchbtn:hover {
+    
+    background: #28262f;
+    border-color: #28262f;;
+
+}
+
+.house-btn:hover {
+    background: #5f3fd3;
+    border-color: #5f3fd3;
+}
+
+button{
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info {
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.info p{
+    color: #f0eef1;
+    font-size: 15px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+.info input{
+    width: 50%;
+    padding: 8px 10px;
+    border: 2px solid white;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+::placeholder{
+    color: #756c78;
+}
+
+.user .avatar{
+    border-radius: 55px;
+}
+
+.characters-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(86, 86, 86, 0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 9;
+}
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 60px;
+        }
+
+        .character-card {
+            background: rgba(45, 45, 77, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px solid #5d3fd3;
+        }
+
+        .character-name {
+            padding: 10px 5px;
+            font-size: 14px;
+            color: #f0c75e;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #5d3fd3;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 11;
+            color: white;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #f0c75e;
+            font-size: 18px;
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #ff6b6b;
+            font-size: 18px;
+        }
+        
+        .house-title {
+            color: #f0c75e;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+        }
